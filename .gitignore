@@ -1,0 +1,2 @@
+# don't upload node_modules directory to git because its size is a MONSTER
+node_modules
