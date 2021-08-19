@@ -2,6 +2,12 @@
 
 An example project of API server created using Express JS
 
+This repository has 2 branches: `master` & `routing`
+
+`master`: Contain simple example
+
+`routing`: Contain simple example with routing
+
 ## How to Run
 
 1. Clone this repository.
@@ -17,3 +23,15 @@ npm install
 ```
 node index.js
 ```
+
+## How to Switch Branch
+1. Open terminal.
+
+2. Mount the directory.
+
+3. Switch branch with Git.
+```
+git checkout routing
+```
+
+4. Install dependencies & run as usual.
