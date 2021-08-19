@@ -3,18 +3,31 @@ const app = express(); // jalankan fungsi untuk inisiasi express
 
 const port = 3000; // port yang akan digunakan
 
-// fungsi ini nantinya akan digunakan saat server diakses
+
 function helloWorld(req, res){
-  return res.send('Hello world');
+  res.send('Hello World');
 }
 
-// fungsi ini nantinya akan digunakan saat program pertama kali dijalankan
-function onRun(){
-  console.log(`Server is running on http://localhost:${port}`);
+function getProducts(req, res){
+  const data = ['Apple', 'Redmi', 'One Plus'];
+  
+  res.json(data);
 }
 
-// Ketika server diakses di alamat http://localhost:port/, jalankan fungsi helloWorld
+function getOrders(req, res){
+  const data = { id: 1, paid: false, user_id: 1 };
+  
+  res.json(data);
+}
+
+
+// Request ke http://localhost:3000/ akan diarahkan ke handler helloWorld
 app.get('/', helloWorld);
 
-// Ketika program dijalankan di port, jalankan fungsi onRun
-app.listen(port, onRun);
+// Request ke http://localhost:3000/products akan diarahkan ke handler getProducts
+app.get('/products', getProducts);
+
+// Request ke http://localhost:3000/orders akan diarahkan ke handler getOrders
+app.get('/orders', getOrders);
+
+app.listen(port);
