@@ -12,6 +12,8 @@ This repository has 2 branches: `master`, `routing`, `view-engine`, `post-with-f
 
 `post-with-form`: Contain simple example of post api for registration
 
+`statics-view`: Contain simple example of static file serving
+
 ## How to Run
 
 1. Clone this repository.
