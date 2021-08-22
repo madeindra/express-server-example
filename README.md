@@ -2,11 +2,15 @@
 
 An example project of API server created using Express JS
 
-This repository has 2 branches: `master` & `routing`
+This repository has 2 branches: `master`, `routing`, `view-engine`, `post-with-form`
 
 `master`: Contain simple example
 
 `routing`: Contain simple example with routing
+
+`view-engine`: Contain simple example of view using ejs
+
+`post-with-form`: Contain simple example of post api for registration
 
 ## How to Run
 
