@@ -14,6 +14,8 @@ This repository has 2 branches: `master`, `routing`, `view-engine`, `post-with-f
 
 `statics-view`: Contain simple example of static file serving
 
+`rest-api`: Contain simple example of REST API
+
 ## How to Run
 
 1. Clone this repository.
