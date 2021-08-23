@@ -10,36 +10,36 @@ function onRun(){
   console.log(`Server is running on http://localhost:${port}`);
 }
 
-// handler untuk /user ketika menggunakan method GET
+// handler untuk /users ketika menggunakan method GET
 function getUser(req, res){
   res.status(200);
-  res.send('Anda mengakses /user dengan method GET');
+  res.send('Anda mengakses /users dengan method GET');
 }
 
-// handler untuk /user ketika menggunakan method POST
+// handler untuk /users ketika menggunakan method POST
 function postUser(req, res){
   res.status(200);
-  res.send('Anda mengakses /user dengan method POST');
+  res.send('Anda mengakses /users dengan method POST');
 }
 
-// handler untuk /user ketika menggunakan method PUT
+// handler untuk /users ketika menggunakan method PUT
 function putUser(req, res){
   res.status(200);
-  res.send('Anda mengakses /user dengan method PUT');
+  res.send('Anda mengakses /users dengan method PUT');
 }
 
-// handler untuk /user ketika menggunakan method DELETE
+// handler untuk /users ketika menggunakan method DELETE
 function deleteUser(req, res){
   res.status(200);
-  res.send('Anda mengakses /user dengan method DELETE');
+  res.send('Anda mengakses /users dengan method DELETE');
 }
 
 
 // route untuk user dengan 4 methods
-app.get('/user', getUser);
-app.post('/user', postUser);
-app.put('/user', putUser);
-app.delete('/user', deleteUser);
+app.get('/users', getUser);
+app.post('/users', postUser);
+app.put('/users', putUser);
+app.delete('/users', deleteUser);
 
 // Ketika program dijalankan di port, jalankan fungsi onRun
 app.listen(port, onRun);
